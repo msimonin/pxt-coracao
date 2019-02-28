@@ -1,24 +1,39 @@
-# pxt-voando
+# Flashing Heart
 
+## Introduction @unplugged
 
+Learn how to use the LEDs and make a flashing heart! 
+(Want to learn how lights work? [Watch this video](https://youtu.be/qqBmvHD5bCw)).
 
-## TODO
+## Step 1 @fullscreen
 
-- [ ] Add a reference for your blocks here
-- [ ] Add "icon.png" image (300x200) in the root folder
-- [ ] Add "- beta" to the GitHub project description if you are still iterating it.
-- [ ] Turn on your automated build on https://travis-ci.org
-- [ ] Use "pxt bump" to create a tagged release on GitHub
-- [ ] Get your package reviewed and approved https://makecode.microbit.org/packages/approval
+Place the ``||basic:show leds||`` block in the ``||basic:forever||`` block and draw a heart.
 
-Read more at https://makecode.microbit.org/packages/build-your-own
+## Step 2 @fullscreen
 
-## License
+Place another ``||basic:show leds||`` block. You can leave it blank and draw what you want.
 
+```blocks
+basic.forever(function() {
+    basic.showLeds(`
+        . # . # .
+        # # # # #
+        # # # # #
+        . # # # .
+        . . # . .`);
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .`);
+})
+```
 
+## Step 3 @fullscreen
 
-## Supported targets
+Look at the virtual @boardname@, you should see the heart and your drawing blink on the screen.
 
-* for PXT/microbit
-(The metadata above is needed for package search.)
+## Step 4 @fullscreen
 
+If you have a @boardname@ connected, click ``|Download|`` to transfer your code and watch the hearts flash!
